@@ -70,8 +70,5 @@ Week3_Lab_Quick_Reference.md
 ✉️ Support
 Course Discord
 
-Email: thanit@example.com
-
-Office Hours: Tue/Thu 14:00-16:00
-
 ENGSE207 Software Architecture - Week 3
+
