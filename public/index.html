@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monolithic Task Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📌 Monolithic Task Board</h1>
+            <p>ENGSE207 Lab - Week 3</p>
+        </header>
+
+        <div class="task-form">
+            <input type="text" id="title" placeholder="Title (e.g., Fix Bug)" required>
+            <input type="text" id="description" placeholder="Description">
+            <select id="priority">
+                <option value="LOW">Low Priority</option>
+                <option value="MEDIUM" selected>Medium Priority</option>
+                <option value="HIGH">High Priority</option>
+            </select>
+            <button onclick="createTask()">+ Add Task</button>
+        </div>
+
+        <div class="board">
+            <div class="column" id="col-todo">
+                <div class="column-header header-todo">📝 TO DO</div>
+                <div class="task-list" id="list-todo"></div>
+            </div>
+            <div class="column" id="col-progress">
+                <div class="column-header header-progress">⏳ IN PROGRESS</div>
+                <div class="task-list" id="list-inprogress"></div>
+            </div>
+            <div class="column" id="col-done">
+                <div class="column-header header-done">✅ DONE</div>
+                <div class="task-list" id="list-done"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
